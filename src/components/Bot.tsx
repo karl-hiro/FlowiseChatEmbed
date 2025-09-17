@@ -1762,7 +1762,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
           {isDragActive() && (uploadsConfig()?.isImageUploadAllowed || isFileUploadAllowed()) && (
             <div
               class="absolute top-0 left-0 bottom-0 right-0 flex flex-col items-center justify-center bg-black/60 backdrop-blur-sm text-white z-40 gap-2 border-2 border-dashed"
-              style={{ 'border-color': props.bubbleBackgroundColor }}
+              style={{ 'border-color':'#FF69B4' }}
             >
               <h2 class="text-xl font-semibold">Drop here to upload</h2>
               <For each={[...(uploadsConfig()?.imgUploadSizeAndTypes || []), ...(uploadsConfig()?.fileUploadSizeAndTypes || [])]}>
@@ -1782,7 +1782,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
             <div
               class="flex flex-row items-center w-full h-[50px] absolute top-0 left-0 z-10"
               style={{
-                background: props.titleBackgroundColor || props.bubbleBackgroundColor || defaultTitleBackgroundColor,
+                background: '#FF69B4',
                 color: props.titleTextColor || props.bubbleTextColor || defaultBackgroundColor,
                 'border-top-left-radius': props.isFullPage ? '0px' : '6px',
                 'border-top-right-radius': props.isFullPage ? '0px' : '6px',
