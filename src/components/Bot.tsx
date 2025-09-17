@@ -466,7 +466,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
   const [messages, setMessages] = createSignal<MessageType[]>(
     [
       {
-        message: props.welcomeMessage ?? defaultWelcomeMessage,
+        message: defaultWelcomeMessage,
         type: 'apiMessage',
       },
     ],
