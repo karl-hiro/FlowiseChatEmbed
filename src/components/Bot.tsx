@@ -1286,7 +1286,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
                   typeof message.agentFlowExecutedData === 'string' ? JSON.parse(message.agentFlowExecutedData) : message.agentFlowExecutedData;
               return chatHistory;
             })
-          : [{ message:  defaultWelcomeMessage, type: 'apiMessage' }];
+          : [{ message: defaultWelcomeMessage, type: 'apiMessage' }];
 
       const filteredMessages = loadedMessages.filter((message) => message.type !== 'leadCaptureMessage');
       setMessages([...filteredMessages]);
@@ -1410,7 +1410,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
       setLoading(false);
       setMessages([
         {
-          message:  defaultWelcomeMessage,
+          message: defaultWelcomeMessage,
           type: 'apiMessage',
         },
       ]);
