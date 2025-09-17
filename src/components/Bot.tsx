@@ -183,7 +183,7 @@ export type LeadsConfig = {
   successMessage?: string;
 };
 
-const defaultWelcomeMessage = 'Hi there! How can I help?';
+const defaultWelcomeMessage = `Hi I'm HIRO your AI assistant`;
 
 /*const sourceDocuments = [
     {
